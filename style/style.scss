@@ -102,3 +102,27 @@ img {
     color: $Very-light-gray;
     border: solid $Very-light-gray;
 }
+@media only screen and (max-width: $breakpoint-medium) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sedans {
+        background: $Bright-orange;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .luxury {
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        background: $Very-dark-cyan;
+    }
+}
