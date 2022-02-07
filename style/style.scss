@@ -1,0 +1,104 @@
+@import "variable";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+    background: $Very-light-gray;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    margin-top: 3.2rem;
+}
+.heading {
+        font-family: "Big Shoulders Display", sans-serif;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 2rem;
+        text-transform: uppercase;
+}
+.sedans,
+.suvs,
+.luxury{
+    padding: 5rem;
+}
+.sedans {
+    background: $Bright-orange;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.suvs {
+    background: $Dark-cyan;
+}
+.luxury {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: $Very-dark-cyan;
+}
+img {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.heading {
+    color: $Very-light-gray;
+    padding-bottom: 2.2rem;
+}
+.para {
+    font-size: 1.1rem;
+    color: $Very-light-gray;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+.btn {
+    padding: 1.2rem;
+    background: $Very-light-gray;
+    border: none;
+}
+.sedans .btn {
+    font-size: 1rem;
+    border-radius: 50px;
+    color: $Bright-orange;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.sedans .btn:hover {
+    background: $Bright-orange;
+    color: $Very-light-gray;
+    border: solid $Very-light-gray;
+}
+.suvs .btn {
+    font-size: 1rem;
+    border-radius: 50px;
+    color: $Dark-cyan;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.suvs .btn:hover {
+    background: $Dark-cyan;
+    color: $Very-light-gray;
+    border: solid $Very-light-gray;
+}
+.luxury .btn {
+    font-size: 1rem;
+    border-radius: 50px;
+    color: $Very-dark-cyan;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.luxury .btn:hover {
+    background: $Very-dark-cyan;
+    color: $Very-light-gray;
+    border: solid $Very-light-gray;
+}
